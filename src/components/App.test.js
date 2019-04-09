@@ -1,12 +1,12 @@
 import React from 'react';
-import { App } from './App';
 
 import renderer from 'react-test-renderer';
+import StarMatch from './App';
 
-describe('App', () => {
+describe('StarMatch', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<App initialData={{ appName: 'TEST' }} />)
+      .create(<StarMatch />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();
